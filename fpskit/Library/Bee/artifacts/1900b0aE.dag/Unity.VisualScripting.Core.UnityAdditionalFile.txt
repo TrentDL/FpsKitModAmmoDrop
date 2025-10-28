@@ -1,1 +1,1 @@
-C:\_mr\fpskit\fpskit
+C:\FpsKitModPlayerDeathSound\fpskit

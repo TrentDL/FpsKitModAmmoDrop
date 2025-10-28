@@ -1,33 +1,33 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: C:/_mr/fpskit/fpskit/Packages/manifest.json
+    m_FilePath: C:/FpsKitModPlayerDeathSound/fpskit/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638936586446319826
-    m_Hash: 380448795
+      ticks: 638972908666833051
+    m_Hash: 1983233039
   m_LockFileStatus:
-    m_FilePath: C:/_mr/fpskit/fpskit/Packages/packages-lock.json
+    m_FilePath: C:/FpsKitModPlayerDeathSound/fpskit/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638936586488163993
-    m_Hash: 534932536
+      ticks: 638972913428590487
+    m_Hash: 3085276767
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
-m_ProjectPath: C:/_mr/fpskit/fpskit/Packages
-m_EditorVersion: 6000.0.55f1 (c5f59906196d)
+m_ProjectPath: C:/FpsKitModPlayerDeathSound/fpskit/Packages
+m_EditorVersion: 6000.0.51f1 (01c3ff5872c5)
 m_ResolvedPackages:
 - packageId: com.unity.2d.sprite@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.2d.sprite@a1146c20a947
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.2d.sprite@a1146c20a947
   assetPath: Packages/com.unity.2d.sprite
   name: com.unity.2d.sprite
   displayName: 2D Sprite
@@ -106,7 +106,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.2d.tilemap@3f6ff602680c
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.2d.tilemap@91e7def251e0
   assetPath: Packages/com.unity.2d.tilemap
   name: com.unity.2d.tilemap
   displayName: 2D Tilemap Editor
@@ -186,7 +186,7 @@ m_ResolvedPackages:
   upmReserved: 
   assetStore:
     productId: 
-  fingerprint: 3f6ff602680c7be3e17746d20ed91961ccec8b8f
+  fingerprint: 91e7def251e0de922ba309ad7aa18299b1d60ca7
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
@@ -202,7 +202,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 4.4.2
   source: 1
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.ads@a7b997f68a1d
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.ads@a7b997f68a1d
   assetPath: Packages/com.unity.ads
   name: com.unity.ads
   displayName: Advertisement Legacy
@@ -271,10 +271,12 @@ m_ResolvedPackages:
     - 4.4.1
     - 4.4.2
     - 4.12.0
+    - 4.16.3
     compatible:
     - 4.4.2
     - 4.12.0
-    recommended: 4.12.0
+    - 4.16.3
+    recommended: 4.16.3
     deprecated: []
   dependencies:
   - name: com.unity.ugui
@@ -315,7 +317,7 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 4.4.2
     nextVersion: 
-    recommendedVersion: 4.12.0
+    recommendedVersion: 4.16.3
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
@@ -344,7 +346,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.8
   source: 1
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.ai.navigation@eb5635ad590d
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.ai.navigation@eb5635ad590d
   assetPath: Packages/com.unity.ai.navigation
   name: com.unity.ai.navigation
   displayName: AI Navigation
@@ -468,7 +470,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 3.8.1
   source: 1
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.analytics@6cc66d58ac08
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.analytics@6cc66d58ac08
   assetPath: Packages/com.unity.analytics
   name: com.unity.analytics
   displayName: Analytics Library
@@ -521,9 +523,11 @@ m_ResolvedPackages:
     - 3.6.12
     - 3.7.1
     - 3.8.1
+    - 3.8.2
     compatible:
     - 3.8.1
-    recommended: 3.8.1
+    - 3.8.2
+    recommended: 3.8.2
     deprecated: []
   dependencies:
   - name: com.unity.ugui
@@ -605,7 +609,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.9.3
   source: 1
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.collab-proxy@ab839cc7d2ad
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.collab-proxy@ab839cc7d2ad
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Unity Version Control
@@ -703,11 +707,13 @@ m_ResolvedPackages:
     - 2.9.1
     - 2.9.2
     - 2.9.3
+    - 2.10.0
     compatible:
     - 2.8.2
     - 2.9.1
     - 2.9.2
     - 2.9.3
+    - 2.10.0
     recommended: 2.8.2
     deprecated: []
   dependencies: []
@@ -783,7 +789,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.5
   source: 2
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.ext.nunit@031a54704bff
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.ext.nunit@031a54704bff
   assetPath: Packages/com.unity.ext.nunit
   name: com.unity.ext.nunit
   displayName: Custom NUnit
@@ -862,7 +868,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 3.0.36
   source: 1
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.ide.rider@4d374c7eb6db
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.ide.rider@4d374c7eb6db
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -925,11 +931,14 @@ m_ResolvedPackages:
     - 3.0.35
     - 3.0.36
     - 3.0.37
+    - 3.0.38
     compatible:
     - 3.0.36
     - 3.0.37
-    recommended: 3.0.37
-    deprecated: []
+    - 3.0.38
+    recommended: 3.0.38
+    deprecated:
+    - 3.0.37
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -991,7 +1000,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.23
   source: 1
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.ide.visualstudio@198cdf337d13
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.ide.visualstudio@198cdf337d13
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -1032,9 +1041,11 @@ m_ResolvedPackages:
     - 2.0.21
     - 2.0.22
     - 2.0.23
+    - 2.0.25
     compatible:
     - 2.0.23
-    recommended: 2.0.23
+    - 2.0.25
+    recommended: 2.0.25
     deprecated: []
   dependencies:
   - name: com.unity.test-framework
@@ -1106,7 +1117,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.14.1
   source: 1
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.inputsystem@978211393e28
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.inputsystem@978211393e28
   assetPath: Packages/com.unity.inputsystem
   name: com.unity.inputsystem
   displayName: Input System
@@ -1178,9 +1189,12 @@ m_ResolvedPackages:
     - 1.14.0
     - 1.14.1
     - 1.14.2
+    - 1.15.0
     compatible:
+    - 1.14.0
     - 1.14.1
     - 1.14.2
+    - 1.15.0
     recommended: 1.14.2
     deprecated: []
   dependencies:
@@ -1230,7 +1244,7 @@ m_ResolvedPackages:
     revision: 5f79385f7037a45b3871a30c4bacfbfa0aedb978
     path: 
   unityLifecycle:
-    version: 1.14.1
+    version: 1.14.0
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -1288,7 +1302,7 @@ m_ResolvedPackages:
   fingerprint: 978211393e28699aba338ed157cef347ac565bbf
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.14.1
+    minimumPackageVersion: 1.14.0
     minimumUnityVersion: 2021.3.0a1
   compliance:
     status: 0
@@ -1301,7 +1315,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.multiplayer.center@f3fb577b3546
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.multiplayer.center@f3fb577b3546
   assetPath: Packages/com.unity.multiplayer.center
   name: com.unity.multiplayer.center
   displayName: Multiplayer Center
@@ -1394,7 +1408,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 3.2.1
   source: 1
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.nuget.newtonsoft-json@74deb55db2a0
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.nuget.newtonsoft-json@74deb55db2a0
   assetPath: Packages/com.unity.nuget.newtonsoft-json
   name: com.unity.nuget.newtonsoft-json
   displayName: Newtonsoft Json
@@ -1433,9 +1447,11 @@ m_ResolvedPackages:
     - 3.1.0
     - 3.2.0
     - 3.2.1
+    - 3.2.2
     compatible:
     - 3.2.1
-    recommended: 3.2.1
+    - 3.2.2
+    recommended: 3.2.2
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -1494,7 +1510,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 3.5.0
   source: 1
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.postprocessing@94edadb6c5ab
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.postprocessing@94edadb6c5ab
   assetPath: Packages/com.unity.postprocessing
   name: com.unity.postprocessing
   displayName: Post Processing
@@ -1549,9 +1565,12 @@ m_ResolvedPackages:
     - 3.3.0
     - 3.4.0
     - 3.5.0
+    - 3.5.1
     compatible:
+    - 3.4.0
     - 3.5.0
-    recommended: 3.5.0
+    - 3.5.1
+    recommended: 3.4.0
     deprecated: []
   dependencies:
   - name: com.unity.modules.physics
@@ -1584,7 +1603,7 @@ m_ResolvedPackages:
     revision: fa7961686d1f2babd45a3acaf1f3939696bd1b2e
     path: 
   unityLifecycle:
-    version: 3.5.0
+    version: 3.4.0
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -1603,7 +1622,7 @@ m_ResolvedPackages:
   fingerprint: 94edadb6c5ab827a382b0d6f5f550866ffcfc586
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 3.5.0
+    minimumPackageVersion: 3.4.0
     minimumUnityVersion: 2019.4.19f1
   compliance:
     status: 0
@@ -1616,7 +1635,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 4.12.2
   source: 1
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.purchasing@649c6c7b3b1b
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.purchasing@649c6c7b3b1b
   assetPath: Packages/com.unity.purchasing
   name: com.unity.purchasing
   displayName: In App Purchasing
@@ -1716,6 +1735,8 @@ m_ResolvedPackages:
     - 4.12.1
     - 4.12.2
     - 4.13.0
+    - 4.13.1
+    - 4.13.2
     - 5.0.0-pre.1
     - 5.0.0-pre.3
     - 5.0.0-pre.4
@@ -1725,9 +1746,12 @@ m_ResolvedPackages:
     - 5.0.0-pre.8
     - 5.0.0
     - 5.0.1
+    - 5.0.2
     compatible:
     - 4.12.2
     - 4.13.0
+    - 4.13.1
+    - 4.13.2
     - 5.0.0-pre.1
     - 5.0.0-pre.3
     - 5.0.0-pre.4
@@ -1737,7 +1761,8 @@ m_ResolvedPackages:
     - 5.0.0-pre.8
     - 5.0.0
     - 5.0.1
-    recommended: 5.0.1
+    - 5.0.2
+    recommended: 5.0.2
     deprecated: []
   dependencies:
   - name: com.unity.ugui
@@ -1826,7 +1851,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 17.0.4
   source: 2
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.render-pipelines.universal@dd24be0d7cf1
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.render-pipelines.universal@a55da47cc43f
   assetPath: Packages/com.unity.render-pipelines.universal
   name: com.unity.render-pipelines.universal
   displayName: Universal Render Pipeline
@@ -1859,7 +1884,7 @@ m_ResolvedPackages:
   - name: com.unity.render-pipelines.core
     version: 17.0.4
   - name: com.unity.burst
-    version: 1.8.23
+    version: 1.8.21
   - name: com.unity.mathematics
     version: 1.3.2
   - name: com.unity.modules.jsonserialize
@@ -1936,7 +1961,7 @@ m_ResolvedPackages:
   upmReserved: 
   assetStore:
     productId: 
-  fingerprint: dd24be0d7cf165e3b4d0d5849c5ae051b9b7a957
+  fingerprint: a55da47cc43f82fb2bcd4d2e0c610e473c0f6880
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 17.0.4
@@ -1952,7 +1977,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 6.0.3
   source: 1
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.services.analytics@3692623288ba
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.services.analytics@3692623288ba
   assetPath: Packages/com.unity.services.analytics
   name: com.unity.services.analytics
   displayName: Analytics
@@ -2086,7 +2111,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.14.0
   source: 1
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.services.core@9e81a5e38245
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.services.core@9e81a5e38245
   assetPath: Packages/com.unity.services.core
   name: com.unity.services.core
   displayName: Services Core
@@ -2136,10 +2161,12 @@ m_ResolvedPackages:
     - 1.13.0
     - 1.14.0
     - 1.15.1
+    - 1.15.2
     compatible:
     - 1.14.0
     - 1.15.1
-    recommended: 1.15.1
+    - 1.15.2
+    recommended: 1.15.2
     deprecated: []
   dependencies:
   - name: com.unity.modules.androidjni
@@ -2215,7 +2242,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.5.1
   source: 2
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.test-framework@dfdbd02f5918
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.test-framework@dfdbd02f5918
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -2304,7 +2331,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.8.7
   source: 1
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.timeline@c58b4ee65782
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.timeline@c58b4ee65782
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -2501,7 +2528,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.0
   source: 2
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.ugui@529b01454a55
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.ugui@a0f5d16b3c82
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
   displayName: Unity UI
@@ -2580,7 +2607,7 @@ m_ResolvedPackages:
   upmReserved: 
   assetStore:
     productId: 
-  fingerprint: 529b01454a5505bdf629ef2d4df32fecada24ec3
+  fingerprint: a0f5d16b3c8274d62d6bf6afdaa2eeef242bbd2b
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 2.0.0
@@ -2596,7 +2623,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.9.7
   source: 1
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.visualscripting@6279e2b7c485
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.visualscripting@6279e2b7c485
   assetPath: Packages/com.unity.visualscripting
   name: com.unity.visualscripting
   displayName: Visual Scripting
@@ -2646,10 +2673,12 @@ m_ResolvedPackages:
     - 1.9.6
     - 1.9.7
     - 1.9.8
+    - 1.9.9
     compatible:
     - 1.9.7
     - 1.9.8
-    recommended: 1.9.8
+    - 1.9.9
+    recommended: 1.9.9
     deprecated:
     - 1.8.0-pre.1
   dependencies:
@@ -2728,7 +2757,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.1.12
   source: 1
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.xr.legacyinputhelpers@b7579e86f3b4
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.xr.legacyinputhelpers@b7579e86f3b4
   assetPath: Packages/com.unity.xr.legacyinputhelpers
   name: com.unity.xr.legacyinputhelpers
   displayName: XR Legacy Input Helpers
@@ -2774,9 +2803,13 @@ m_ResolvedPackages:
     - 2.1.10
     - 2.1.11
     - 2.1.12
+    - 2.1.13
+    - 3.0.0
     compatible:
     - 2.1.12
-    recommended: 2.1.12
+    - 2.1.13
+    - 3.0.0
+    recommended: 2.1.13
     deprecated: []
   dependencies:
   - name: com.unity.modules.vr
@@ -2855,7 +2888,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.accessibility
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.accessibility
   assetPath: Packages/com.unity.modules.accessibility
   name: com.unity.modules.accessibility
   displayName: Accessibility
@@ -2931,7 +2964,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.ai
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.ai
   assetPath: Packages/com.unity.modules.ai
   name: com.unity.modules.ai
   displayName: AI
@@ -3007,7 +3040,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.androidjni
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.androidjni
   assetPath: Packages/com.unity.modules.androidjni
   name: com.unity.modules.androidjni
   displayName: Android JNI
@@ -3082,7 +3115,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.animation
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.animation
   assetPath: Packages/com.unity.modules.animation
   name: com.unity.modules.animation
   displayName: Animation
@@ -3158,7 +3191,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.assetbundle
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.assetbundle
   assetPath: Packages/com.unity.modules.assetbundle
   name: com.unity.modules.assetbundle
   displayName: Asset Bundle
@@ -3234,7 +3267,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.audio
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.audio
   assetPath: Packages/com.unity.modules.audio
   name: com.unity.modules.audio
   displayName: Audio
@@ -3310,7 +3343,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.cloth
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.cloth
   assetPath: Packages/com.unity.modules.cloth
   name: com.unity.modules.cloth
   displayName: Cloth
@@ -3390,7 +3423,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.director
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.director
   assetPath: Packages/com.unity.modules.director
   name: com.unity.modules.director
   displayName: Director
@@ -3474,7 +3507,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.hierarchycore
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.hierarchycore
   assetPath: Packages/com.unity.modules.hierarchycore
   name: com.unity.modules.hierarchycore
   displayName: Hierarchy Core
@@ -3550,7 +3583,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.imageconversion
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.imageconversion
   assetPath: Packages/com.unity.modules.imageconversion
   name: com.unity.modules.imageconversion
   displayName: Image Conversion
@@ -3626,7 +3659,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.imgui
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.imgui
   assetPath: Packages/com.unity.modules.imgui
   name: com.unity.modules.imgui
   displayName: IMGUI
@@ -3702,7 +3735,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.jsonserialize
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.jsonserialize
   assetPath: Packages/com.unity.modules.jsonserialize
   name: com.unity.modules.jsonserialize
   displayName: JSONSerialize
@@ -3778,7 +3811,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.particlesystem
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.particlesystem
   assetPath: Packages/com.unity.modules.particlesystem
   name: com.unity.modules.particlesystem
   displayName: Particle System
@@ -3854,7 +3887,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.physics
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.physics
   assetPath: Packages/com.unity.modules.physics
   name: com.unity.modules.physics
   displayName: Physics
@@ -3930,7 +3963,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.physics2d
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.physics2d
   assetPath: Packages/com.unity.modules.physics2d
   name: com.unity.modules.physics2d
   displayName: Physics 2D
@@ -4006,7 +4039,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.screencapture
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.screencapture
   assetPath: Packages/com.unity.modules.screencapture
   name: com.unity.modules.screencapture
   displayName: Screen Capture
@@ -4086,7 +4119,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.subsystems
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.subsystems
   assetPath: Packages/com.unity.modules.subsystems
   name: com.unity.modules.subsystems
   displayName: Subsystems
@@ -4166,7 +4199,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.terrain
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.terrain
   assetPath: Packages/com.unity.modules.terrain
   name: com.unity.modules.terrain
   displayName: Terrain
@@ -4242,7 +4275,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.terrainphysics
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.terrainphysics
   assetPath: Packages/com.unity.modules.terrainphysics
   name: com.unity.modules.terrainphysics
   displayName: Terrain Physics
@@ -4326,7 +4359,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.tilemap
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.tilemap
   assetPath: Packages/com.unity.modules.tilemap
   name: com.unity.modules.tilemap
   displayName: Tilemap
@@ -4405,7 +4438,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.ui
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.ui
   assetPath: Packages/com.unity.modules.ui
   name: com.unity.modules.ui
   displayName: UI
@@ -4481,7 +4514,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.uielements
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.uielements
   assetPath: Packages/com.unity.modules.uielements
   name: com.unity.modules.uielements
   displayName: UIElements
@@ -4573,7 +4606,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.umbra
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.umbra
   assetPath: Packages/com.unity.modules.umbra
   name: com.unity.modules.umbra
   displayName: Umbra
@@ -4649,7 +4682,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unityanalytics
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unityanalytics
   assetPath: Packages/com.unity.modules.unityanalytics
   name: com.unity.modules.unityanalytics
   displayName: Unity Analytics
@@ -4732,7 +4765,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequest
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequest
   assetPath: Packages/com.unity.modules.unitywebrequest
   name: com.unity.modules.unitywebrequest
   displayName: Unity Web Request
@@ -4808,7 +4841,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestassetbundle
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestassetbundle
   assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
   name: com.unity.modules.unitywebrequestassetbundle
   displayName: Unity Web Request Asset Bundle
@@ -4892,7 +4925,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestaudio
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestaudio
   assetPath: Packages/com.unity.modules.unitywebrequestaudio
   name: com.unity.modules.unitywebrequestaudio
   displayName: Unity Web Request Audio
@@ -4976,7 +5009,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequesttexture
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequesttexture
   assetPath: Packages/com.unity.modules.unitywebrequesttexture
   name: com.unity.modules.unitywebrequesttexture
   displayName: Unity Web Request Texture
@@ -5060,7 +5093,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestwww
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestwww
   assetPath: Packages/com.unity.modules.unitywebrequestwww
   name: com.unity.modules.unitywebrequestwww
   displayName: Unity Web Request WWW
@@ -5160,7 +5193,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.vehicles
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.vehicles
   assetPath: Packages/com.unity.modules.vehicles
   name: com.unity.modules.vehicles
   displayName: Vehicles
@@ -5240,7 +5273,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.video
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.video
   assetPath: Packages/com.unity.modules.video
   name: com.unity.modules.video
   displayName: Video
@@ -5328,7 +5361,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.vr
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.vr
   assetPath: Packages/com.unity.modules.vr
   name: com.unity.modules.vr
   displayName: VR
@@ -5418,7 +5451,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.wind
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.wind
   assetPath: Packages/com.unity.modules.wind
   name: com.unity.modules.wind
   displayName: Wind
@@ -5494,7 +5527,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.xr
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.51f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.xr
   assetPath: Packages/com.unity.modules.xr
   name: com.unity.modules.xr
   displayName: XR
@@ -5582,7 +5615,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 17.0.4
   source: 2
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.render-pipelines.core@571bc777a084
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.render-pipelines.core@2be5e7224a10
   assetPath: Packages/com.unity.render-pipelines.core
   name: com.unity.render-pipelines.core
   displayName: Scriptable Render Pipeline Core
@@ -5626,7 +5659,7 @@ m_ResolvedPackages:
     version: 1.0.1
   resolvedDependencies:
   - name: com.unity.burst
-    version: 1.8.23
+    version: 1.8.21
   - name: com.unity.mathematics
     version: 1.3.2
   - name: com.unity.modules.jsonserialize
@@ -5691,7 +5724,7 @@ m_ResolvedPackages:
   upmReserved: 
   assetStore:
     productId: 
-  fingerprint: 571bc777a0849704f6bb09e45582eb8d737d5b45
+  fingerprint: 2be5e7224a10830881453cbaf6898e584c3addb6
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 17.0.4
@@ -5707,7 +5740,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 17.0.4
   source: 2
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.shadergraph@58c763b6444e
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.shadergraph@052d95cfe62a
   assetPath: Packages/com.unity.shadergraph
   name: com.unity.shadergraph
   displayName: Shader Graph
@@ -5739,7 +5772,7 @@ m_ResolvedPackages:
   - name: com.unity.render-pipelines.core
     version: 17.0.4
   - name: com.unity.burst
-    version: 1.8.23
+    version: 1.8.21
   - name: com.unity.mathematics
     version: 1.3.2
   - name: com.unity.modules.jsonserialize
@@ -5806,7 +5839,7 @@ m_ResolvedPackages:
   upmReserved: 
   assetStore:
     productId: 
-  fingerprint: 58c763b6444ecd3e0acae6fb62bb3057541917cd
+  fingerprint: 052d95cfe62aa3664d6a823074c5806f7597e6a4
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 17.0.4
@@ -5822,7 +5855,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 17.0.3
   source: 2
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.render-pipelines.universal-config@dd206bf35d04
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.render-pipelines.universal-config@dd206bf35d04
   assetPath: Packages/com.unity.render-pipelines.universal-config
   name: com.unity.render-pipelines.universal-config
   displayName: Universal Render Pipeline Config
@@ -5848,7 +5881,7 @@ m_ResolvedPackages:
   - name: com.unity.render-pipelines.core
     version: 17.0.4
   - name: com.unity.burst
-    version: 1.8.23
+    version: 1.8.21
   - name: com.unity.mathematics
     version: 1.3.2
   - name: com.unity.modules.jsonserialize
@@ -5929,7 +5962,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 4.9.3
   source: 1
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.searcher@1e17ce91558d
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.searcher@1e17ce91558d
   assetPath: Packages/com.unity.searcher
   name: com.unity.searcher
   displayName: Searcher
@@ -5961,10 +5994,12 @@ m_ResolvedPackages:
     - 4.9.1
     - 4.9.2
     - 4.9.3
+    - 4.9.4
     compatible:
     - 4.9.2
     - 4.9.3
-    recommended: 4.9.3
+    - 4.9.4
+    recommended: 4.9.4
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -6020,12 +6055,12 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.burst@1.8.23
+- packageId: com.unity.burst@1.8.21
   testable: 0
   isDirectDependency: 0
-  version: 1.8.23
+  version: 1.8.21
   source: 1
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.burst@6aff1dd08a0c
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.burst@59eb6f11d242
   assetPath: Packages/com.unity.burst
   name: com.unity.burst
   displayName: Burst
@@ -6181,6 +6216,8 @@ m_ResolvedPackages:
     - 1.8.24
     - 1.8.25
     compatible:
+    - 1.8.21
+    - 1.8.22
     - 1.8.23
     - 1.8.24
     - 1.8.25
@@ -6212,16 +6249,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638856629417660000
+  datePublishedTicks: 638797336625580000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.burst@1.8/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/burst.git
-    revision: 0a4fca7c4d2ed5ed3ce7fd57c6944390dd4745a7
+    revision: 941bff0925baa46012a2eff522313c170bf36c7a
     path: 
   unityLifecycle:
-    version: 1.8.23
+    version: 1.8.21
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -6231,21 +6268,37 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Fixed\n- Fixed \"Building for ''visionOS-simulator'',
-    but linking in object file built for ''visionOS''\" errors that could occur in
-    1.8.22\n- Fixed crash that could occur during Burst compilation for methods with
-    `Span<T>` or `ReadOnlySpan<T>` parameter types\n- Fixed Burst compilation error
-    related to `Aliasing.ExpectNotAliased` failing because of unexpected aliasing
-    of `[NativeContainer]` types\n\n### Changed\n- On QNX and Embedded Linux, the
-    `BurstDebugInformation_DoNotShip` folder is now prefixed with the player build
-    directory name instead of the product name."}'
+  upmReserved: '{"changelog":"- update EmbeddedLinux argument syntax to support newer
+    clang versions\n\n### Added\n- Added LLVM 19 Support\n- Added stack protector
+    AOT settings options.\n\n### Removed\n\n### Fixed\n- Fixed hashing error that
+    could occur when an assembly contained a type reference with a \"module\" resolution
+    scope\n- Fixed internal compiler error when using a `FixedStringNBytes` value
+    in an interpolated string\n- Fixed a crash caused by assigning `null` to a `Span`\n-
+    Fixed \"Unable to resolve the method\" error that occurred when two or more methods
+    had the same name, one of the methods contained a generic parameter, and the
+    generic parameter type had two or more generic arguments\n- Fixed handling of
+    `stackalloc`ed arrays with initial values for newer versions of Visual Studio\n-
+    When building for Android with the Mono scripting backend, arm64-v8a symbols
+    could be incorrectly included in the output, even though Mono for Android only
+    supports armv7. This is now fixed.\n- Fixed compiler crash that could happen
+    when using an interface method that had a default implementation defined in another
+    interface\n- Fixed cropping of tooltips in the inspector.\n- Fixed rare \"Unhandled
+    exception. System.InvalidCastException: Unable to cast object of type ''System.IO.MemoryStream''
+    to type ''System.Text.StringBuilder''\" error that could occur during Burst compilation\n-
+    Fixed a `BC1054` error that could occur if a struct with a pointer-to-generic-parameter-typed
+    field was used as a generic argument to an interface type\n- Fixed compiler crash
+    when trying to use the `Span<T>(T[])` or `Span<T>(T[],int,int)` constructors\n\n###
+    Changed\n- EmbeddedLinux SSE4 default\n\n### Known Issues\n- With LLVM 19, Burst''s
+    alias analysis is more conservative than it needs to be which may result in performance
+    reductions in Burst compiled code. This is will be addressed in the next Burst
+    release. Note that at this time, Burst by default uses LLVM 18."}'
   assetStore:
     productId: 
-  fingerprint: 6aff1dd08a0c2f92ddb7f56ec033a5cb88967056
+  fingerprint: 59eb6f11d2422f95682320d9daa3e79fdb076744
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.8.23
-    minimumUnityVersion: 2021.3.0a1
+    minimumPackageVersion: 1.8.21
+    minimumUnityVersion: 2020.3.0a1
   compliance:
     status: 0
     violation:
@@ -6257,7 +6310,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.3.2
   source: 1
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.mathematics@8017b507cc74
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.mathematics@8017b507cc74
   assetPath: Packages/com.unity.mathematics
   name: com.unity.mathematics
   displayName: Mathematics
@@ -6291,9 +6344,11 @@ m_ResolvedPackages:
     - 1.2.6
     - 1.3.1
     - 1.3.2
+    - 1.3.3
     compatible:
     - 1.3.2
-    recommended: 1.3.2
+    - 1.3.3
+    recommended: 1.3.3
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -6355,7 +6410,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.5.1
   source: 1
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.collections@56bff8827a7e
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.collections@56bff8827a7e
   assetPath: Packages/com.unity.collections
   name: com.unity.collections
   displayName: Collections
@@ -6447,6 +6502,7 @@ m_ResolvedPackages:
     - 2.6.0-exp.2
     - 2.6.0-pre.3
     - 2.6.0-pre.4
+    - 2.6.2
     compatible:
     - 2.5.1
     - 2.5.2
@@ -6455,6 +6511,7 @@ m_ResolvedPackages:
     - 2.6.0-exp.2
     - 2.6.0-pre.3
     - 2.6.0-pre.4
+    - 2.6.2
     recommended: 2.5.7
     deprecated: []
   dependencies:
@@ -6468,7 +6525,7 @@ m_ResolvedPackages:
     version: 3.0.3
   resolvedDependencies:
   - name: com.unity.burst
-    version: 1.8.23
+    version: 1.8.21
   - name: com.unity.mathematics
     version: 1.3.2
   - name: com.unity.modules.jsonserialize
@@ -6543,7 +6600,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.1
   source: 2
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.rendering.light-transport@9bd588f963c0
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.rendering.light-transport@9bd588f963c0
   assetPath: Packages/com.unity.rendering.light-transport
   name: com.unity.rendering.light-transport
   displayName: Unity Light Transport Library
@@ -6574,7 +6631,7 @@ m_ResolvedPackages:
   - name: com.unity.collections
     version: 2.5.1
   - name: com.unity.burst
-    version: 1.8.23
+    version: 1.8.21
   - name: com.unity.mathematics
     version: 1.3.2
   - name: com.unity.modules.jsonserialize
@@ -6648,7 +6705,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.11.4
   source: 1
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.nuget.mono-cecil@d6f9955a5d5f
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.nuget.mono-cecil@d6f9955a5d5f
   assetPath: Packages/com.unity.nuget.mono-cecil
   name: com.unity.nuget.mono-cecil
   displayName: Mono Cecil
@@ -6678,10 +6735,12 @@ m_ResolvedPackages:
     - 1.10.2
     - 1.11.4
     - 1.11.5
+    - 1.11.6
     compatible:
     - 1.11.4
     - 1.11.5
-    recommended: 1.11.5
+    - 1.11.6
+    recommended: 1.11.6
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -6739,7 +6798,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 3.1.0
   source: 1
-  resolvedPath: C:\_mr\fpskit\fpskit\Library\PackageCache\com.unity.test-framework.performance@92d1d09a72ed
+  resolvedPath: C:\FpsKitModPlayerDeathSound\fpskit\Library\PackageCache\com.unity.test-framework.performance@92d1d09a72ed
   assetPath: Packages/com.unity.test-framework.performance
   name: com.unity.test-framework.performance
   displayName: Performance testing API
@@ -6880,4 +6939,4 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-m_BuiltInPackagesHash: a4837b892903cd541bb1777cb154a42a4209fe78
+m_BuiltInPackagesHash: 261425ba29191de55c933548bf6364bb6add9f8c
