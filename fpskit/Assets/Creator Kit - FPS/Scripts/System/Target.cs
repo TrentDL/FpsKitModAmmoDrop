@@ -10,6 +10,8 @@ using UnityEngine;
 // Override the System.Numerics Vector3 with Unity's Vector3 class for 3D position/rotation/scale
 using Vector3 = UnityEngine.Vector3;
 
+using Quaternion = UnityEngine.Quaternion;
+
 // Declare a public class named Target that inherits from MonoBehaviour
 // MonoBehaviour is Unity's base class that allows this script to be attached to GameObjects
 public class Target : MonoBehaviour
@@ -23,6 +25,8 @@ public class Target : MonoBehaviour
     // Public ParticleSystem reference - visual effect played when target is destroyed
     // ParticleSystem is Unity's component for creating particle effects like explosions, sparks, etc.
     public ParticleSystem DestroyedEffect;
+
+    public GameObject ammoDropPrefab;
 
     // [Header] attribute creates a section header in the Unity Inspector for organization
     [Header("Audio")]
@@ -95,6 +99,11 @@ public class Target : MonoBehaviour
         // Store the target's world position before it gets destroyed
         // transform.position gets the GameObject's position in 3D world space
         Vector3 position = transform.position;
+
+        if (ammoDropPrefab != null)
+        {
+            Instantiate(ammoDropPrefab, position, Quaternion.identity);
+        }
 
         // Comment explains why we need special audio handling for destruction
         //the audiosource of the target will get destroyed, so we need to grab a world one and play the clip through it
