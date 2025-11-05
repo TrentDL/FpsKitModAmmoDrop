@@ -1,1 +1,1 @@
-H:\FpsKitModPlayerDeathSound\fpskit
+C:\FpsKitModAmmoDrop\fpskit

@@ -26,7 +26,9 @@ public class Target : MonoBehaviour
     // ParticleSystem is Unity's component for creating particle effects like explosions, sparks, etc.
     public ParticleSystem DestroyedEffect;
 
+    [Header("Enemy Drops")]
     public GameObject ammoDropPrefab;
+    public float dropHeightOffset = 0.2f;
 
     // [Header] attribute creates a section header in the Unity Inspector for organization
     [Header("Audio")]
@@ -102,7 +104,8 @@ public class Target : MonoBehaviour
 
         if (ammoDropPrefab != null)
         {
-            Instantiate(ammoDropPrefab, position, Quaternion.identity);
+            Vector3 spawnPos = position + Vector3.up * dropHeightOffset;
+            Instantiate(ammoDropPrefab, spawnPos, Quaternion.identity);
         }
 
         // Comment explains why we need special audio handling for destruction

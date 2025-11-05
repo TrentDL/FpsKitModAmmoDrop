@@ -28,6 +28,8 @@ using UnityEngine;                 // Core Unity engine functionality - required
 
 [RequireComponent(typeof(Collider))]
 
+
+
 // ============================================================================
 // AMMOBOX CLASS - Pickup item that grants ammunition to the player
 // ============================================================================
@@ -64,6 +66,9 @@ using UnityEngine;                 // Core Unity engine functionality - required
 
 public class AmmoBox : MonoBehaviour
 {
+
+
+
     // ========================================================================
     // PUBLIC INSPECTOR FIELDS - Configure in Unity Editor
     // ========================================================================
@@ -161,6 +166,10 @@ public class AmmoBox : MonoBehaviour
     /// Automatically configures the GameObject with correct settings for an AmmoBox
     /// This is a convenience method to prevent setup errors
     /// </summary>
+    
+
+    
+    
     void Reset()
     {
         // ====================================================================
@@ -258,7 +267,9 @@ public class AmmoBox : MonoBehaviour
         // - OnTriggerStay() would be called each frame while inside
         // - OnTriggerExit() would be called when leaving the collider
         // We use OnTriggerEnter() below to detect player pickup
-        GetComponent<Collider>().isTrigger = true;
+        
+
+
 
         // After this method completes:
         // - GameObject is on "PlayerCollisionOnly" layer
