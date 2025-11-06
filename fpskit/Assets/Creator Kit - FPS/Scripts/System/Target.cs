@@ -26,12 +26,16 @@ public class Target : MonoBehaviour
     // ParticleSystem is Unity's component for creating particle effects like explosions, sparks, etc.
     public ParticleSystem DestroyedEffect;
 
-    [Header("Enemy Drops")]
-    public GameObject ammoDropPrefab;
-    public float dropHeightOffset = 0.2f;
 
     // [Header] attribute creates a section header in the Unity Inspector for organization
     [Header("Audio")]
+
+
+    [Header("Enemy Drops")]
+    public GameObject ammoDropPrefab;  // Ammo box to spawn when killed
+    public float dropHeightOffset = 0.5f;  // Height above death position
+
+
 
     // Public RandomPlayer reference - custom component that plays random audio clips when hit
     // RandomPlayer appears to be a custom script from the FPS Creator Kit
@@ -102,10 +106,12 @@ public class Target : MonoBehaviour
         // transform.position gets the GameObject's position in 3D world space
         Vector3 position = transform.position;
 
+        // Spawn ammo pickup if configured
         if (ammoDropPrefab != null)
         {
-            Vector3 spawnPos = position + Vector3.up * dropHeightOffset;
-            Instantiate(ammoDropPrefab, spawnPos, Quaternion.identity);
+            // Spawn slightly above death position to prevent floor clipping
+            Vector3 spawnPosition = position + Vector3.up * dropHeightOffset;
+            Instantiate(ammoDropPrefab, spawnPosition, Quaternion.identity);
         }
 
         // Comment explains why we need special audio handling for destruction

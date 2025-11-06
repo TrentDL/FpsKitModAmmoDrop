@@ -28,7 +28,7 @@ using UnityEngine;                 // Core Unity engine functionality - required
 
 [RequireComponent(typeof(Collider))]
 
-
+[RequireComponent(typeof(Rigidbody))]
 
 // ============================================================================
 // AMMOBOX CLASS - Pickup item that grants ammunition to the player
@@ -114,6 +114,8 @@ public class AmmoBox : MonoBehaviour
     /// - Integers are safer (no typos like "Riffle Ammo" vs "Rifle Ammo")
     /// - Integers allow for efficient dictionary lookups in Controller
     /// </summary>
+  [Header("Pickup Settings")]
+  
     [AmmoType]
     public int ammoType;
 
@@ -145,6 +147,13 @@ public class AmmoBox : MonoBehaviour
     /// </summary>
     public int amount;
 
+    [Header("Physics Settings")]
+     public float dropForce = 2f; // Small upward force when spawned
+
+     private Rigidbody rb;
+    private bool hasLanded = false;
+     private GameObject triggerChild;
+
     // ========================================================================
     // RESET METHOD - Unity Editor helper method
     // ========================================================================
@@ -168,115 +177,49 @@ public class AmmoBox : MonoBehaviour
     /// </summary>
     
 
-    
-    
-    void Reset()
+    void Start()
     {
-        // ====================================================================
-        // SET COLLISION LAYER
-        // ====================================================================
+        rb = GetComponent<Rigidbody>();
 
-        // Set this GameObject to the "PlayerCollisionOnly" layer
-        // 
-        // WHAT ARE LAYERS:
-        // Unity Layers are like categories or tags for GameObjects
-        // They control which objects can interact with each other
-        // Example layers: Default, Player, Enemy, IgnoreRaycast, etc.
-        // 
-        // gameObject is a reference to the GameObject this script is attached to
-        // Every MonoBehaviour has a "gameObject" property automatically
-        // 
-        // .layer is an integer representing which layer the GameObject is on
-        // Layers are stored as integers (0-31) but have string names
-        // 
-        // LayerMask.NameToLayer("string") converts a layer name to its integer ID
-        // Example: "PlayerCollisionOnly" might return 8 (if that's layer 8)
-        // 
-        // WHY "PlayerCollisionOnly" LAYER:
-        // This layer is configured in Unity's physics settings to:
-        // 1. Only collide with the Player layer (ignores enemies, projectiles, etc.)
-        // 2. Prevents ammo boxes from colliding with bullets or grenades
-        // 3. Prevents ammo boxes from blocking enemy line of sight
-        // 4. Optimizes physics - fewer collision checks = better performance
-        // 
-        // LAYER MATRIX:
-        // Unity has a Layer Collision Matrix (Edit > Project Settings > Physics)
-        // It's a grid showing which layers can collide with which other layers
-        // Example setup for AmmoBox:
-        //   PlayerCollisionOnly ✓ Player (can collide)
-        //   PlayerCollisionOnly ✗ Enemy (can't collide)
-        //   PlayerCollisionOnly ✗ Projectile (can't collide)
-        // 
-        // PERFORMANCE BENEFIT:
-        // By limiting collision checks, we reduce CPU load
-        // In a level with 100 ammo boxes and 50 enemies:
-        // - Without layer filtering: 5000+ collision checks per frame
-        // - With layer filtering: Only checks against 1 player = much faster
-        gameObject.layer = LayerMask.NameToLayer("PlayerCollisionOnly");
-
-        // ====================================================================
-        // CONFIGURE COLLIDER AS TRIGGER
-        // ====================================================================
-
-        // Get the Collider component and set it to be a trigger
-        // 
-        // GetComponent<T>() is a Unity method that:
-        // - Searches for a component of type T on this GameObject
-        // - Returns the component if found, or null if not found
-        // - In this case, we're guaranteed to have a Collider because of [RequireComponent]
-        // 
-        // WHAT IS A TRIGGER:
-        // Unity colliders have two modes:
-        // 1. SOLID COLLIDER (isTrigger = false):
-        //    - Objects bounce off it
-        //    - Applies physics forces
-        //    - Blocks movement
-        //    - Calls OnCollisionEnter/Stay/Exit
-        //    Example: Walls, floors, solid objects
-        // 
-        // 2. TRIGGER COLLIDER (isTrigger = true):
-        //    - Objects pass through it
-        //    - No physics forces applied
-        //    - Doesn't block movement
-        //    - Calls OnTriggerEnter/Stay/Exit instead
-        //    Example: Pickup items, checkpoint zones, trigger volumes
-        // 
-        // WHY USE TRIGGER FOR AMMO BOX:
-        // - Player can walk through it (doesn't block path)
-        // - Detects when player enters the collider volume
-        // - Doesn't apply physics forces that would push player around
-        // - Player can easily collect it by walking over/through it
-        // - No bouncing or pushing like a physics object
-        // 
-        // COMPARISON TO SOLID COLLIDER:
-        // If isTrigger was false (solid):
-        // - Player would bump into the ammo box and stop
-        // - Box might get pushed around the level
-        // - Player would have to precisely touch it to pick it up
-        // - Could block doorways or narrow passages (bad design!)
-        // 
-        // With isTrigger = true:
-        // - Player walks through the ammo box smoothly
-        // - Box stays in place (not affected by physics)
-        // - Easy to collect - just walk near it
-        // - Won't block level geometry or player movement
-        // 
-        // CALLBACK METHOD:
-        // Setting isTrigger = true means:
-        // - OnTriggerEnter() will be called when something enters the collider
-        // - OnTriggerStay() would be called each frame while inside
-        // - OnTriggerExit() would be called when leaving the collider
-        // We use OnTriggerEnter() below to detect player pickup
+        // Ensure main GameObject is on Default layer for ground collision
+        gameObject.layer = LayerMask.NameToLayer("Default");
         
+        // Add small upward force for "pop" effect
+        rb.AddForce(Vector3.up * dropForce, ForceMode.Impulse);
+        
+        // Create a child GameObject for the trigger collider
+        triggerChild = new GameObject("TriggerCollider");
+        triggerChild.transform.SetParent(transform);
+        triggerChild.transform.localPosition = Vector3.zero;
+        triggerChild.transform.localRotation = Quaternion.identity;
+        
+        // Set child to PlayerCollisionOnly layer
+        triggerChild.layer = LayerMask.NameToLayer("PlayerCollisionOnly");
+        
+        // Add trigger collider to child
+        BoxCollider triggerCollider = triggerChild.AddComponent<BoxCollider>();
+        triggerCollider.isTrigger = true;
+        triggerCollider.size = new Vector3(1.5f, 1.5f, 1.5f); // Slightly larger for easier pickup
+        
+        Debug.Log($"AmmoBox main object on layer: {LayerMask.LayerToName(gameObject.layer)}");
+        Debug.Log($"Trigger child on layer: {LayerMask.LayerToName(triggerChild.layer)}");
+    }  //end of function >:(
+
+    // Detect when we hit the ground
+    void OnCollisionEnter(Collision collision)
+    {
+        if (!hasLanded)
+        {
+            hasLanded = true;
+            rb.angularVelocity = Vector3.zero;
+            Debug.Log($"AmmoBox landed on: {collision.gameObject.name}");
+        }
+    } //end of function >:(
 
 
 
-        // After this method completes:
-        // - GameObject is on "PlayerCollisionOnly" layer
-        // - Collider is set to trigger mode
-        // - AmmoBox is ready to detect player and be picked up
-        // - Designer doesn't have to manually configure these settings
-    }
+
+
 
     // ========================================================================
     // ONTRIGGERENTER - Unity physics callback method
@@ -326,7 +269,7 @@ public class AmmoBox : MonoBehaviour
     /// - Any other collider in the game (we'll ignore this)
     /// We only care about the player, so we check for the Controller component
     /// </param>
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)   // Existing trigger detection for pickup
     {
         // ====================================================================
         // PLAYER DETECTION - Check if the colliding object is the player
@@ -504,6 +447,114 @@ public class AmmoBox : MonoBehaviour
         // - The collider passes through harmlessly
         // - AmmoBox stays in the world
         // - Waits for the actual player to collect it
+    }
+    
+      void Reset()
+    {
+        // ====================================================================
+        // SET COLLISION LAYER
+        // ====================================================================
+
+        // Set this GameObject to the "PlayerCollisionOnly" layer
+        // 
+        // WHAT ARE LAYERS:
+        // Unity Layers are like categories or tags for GameObjects
+        // They control which objects can interact with each other
+        // Example layers: Default, Player, Enemy, IgnoreRaycast, etc.
+        // 
+        // gameObject is a reference to the GameObject this script is attached to
+        // Every MonoBehaviour has a "gameObject" property automatically
+        // 
+        // .layer is an integer representing which layer the GameObject is on
+        // Layers are stored as integers (0-31) but have string names
+        // 
+        // LayerMask.NameToLayer("string") converts a layer name to its integer ID
+        // Example: "PlayerCollisionOnly" might return 8 (if that's layer 8)
+        // 
+        // WHY "PlayerCollisionOnly" LAYER:
+        // This layer is configured in Unity's physics settings to:
+        // 1. Only collide with the Player layer (ignores enemies, projectiles, etc.)
+        // 2. Prevents ammo boxes from colliding with bullets or grenades
+        // 3. Prevents ammo boxes from blocking enemy line of sight
+        // 4. Optimizes physics - fewer collision checks = better performance
+        // 
+        // LAYER MATRIX:
+        // Unity has a Layer Collision Matrix (Edit > Project Settings > Physics)
+        // It's a grid showing which layers can collide with which other layers
+        // Example setup for AmmoBox:
+        //   PlayerCollisionOnly ✓ Player (can collide)
+        //   PlayerCollisionOnly ✗ Enemy (can't collide)
+        //   PlayerCollisionOnly ✗ Projectile (can't collide)
+        // 
+        // PERFORMANCE BENEFIT:
+        // By limiting collision checks, we reduce CPU load
+        // In a level with 100 ammo boxes and 50 enemies:
+        // - Without layer filtering: 5000+ collision checks per frame
+        // - With layer filtering: Only checks against 1 player = much faster
+        gameObject.layer = LayerMask.NameToLayer("Default");
+
+        // ====================================================================
+        // CONFIGURE COLLIDER AS TRIGGER
+        // ====================================================================
+
+        // Get the Collider component and set it to be a trigger
+        // 
+        // GetComponent<T>() is a Unity method that:
+        // - Searches for a component of type T on this GameObject
+        // - Returns the component if found, or null if not found
+        // - In this case, we're guaranteed to have a Collider because of [RequireComponent]
+        // 
+        // WHAT IS A TRIGGER:
+        // Unity colliders have two modes:
+        // 1. SOLID COLLIDER (isTrigger = false):
+        //    - Objects bounce off it
+        //    - Applies physics forces
+        //    - Blocks movement
+        //    - Calls OnCollisionEnter/Stay/Exit
+        //    Example: Walls, floors, solid objects
+        // 
+        // 2. TRIGGER COLLIDER (isTrigger = true):
+        //    - Objects pass through it
+        //    - No physics forces applied
+        //    - Doesn't block movement
+        //    - Calls OnTriggerEnter/Stay/Exit instead
+        //    Example: Pickup items, checkpoint zones, trigger volumes
+        // 
+        // WHY USE TRIGGER FOR AMMO BOX:
+        // - Player can walk through it (doesn't block path)
+        // - Detects when player enters the collider volume
+        // - Doesn't apply physics forces that would push player around
+        // - Player can easily collect it by walking over/through it
+        // - No bouncing or pushing like a physics object
+        // 
+        // COMPARISON TO SOLID COLLIDER:
+        // If isTrigger was false (solid):
+        // - Player would bump into the ammo box and stop
+        // - Box might get pushed around the level
+        // - Player would have to precisely touch it to pick it up
+        // - Could block doorways or narrow passages (bad design!)
+        // 
+        // With isTrigger = true:
+        // - Player walks through the ammo box smoothly
+        // - Box stays in place (not affected by physics)
+        // - Easy to collect - just walk near it
+        // - Won't block level geometry or player movement
+        // 
+        // CALLBACK METHOD:
+        // Setting isTrigger = true means:
+        // - OnTriggerEnter() will be called when something enters the collider
+        // - OnTriggerStay() would be called each frame while inside
+        // - OnTriggerExit() would be called when leaving the collider
+        // We use OnTriggerEnter() below to detect player pickup
+        
+
+
+
+        // After this method completes:
+        // - GameObject is on "PlayerCollisionOnly" layer
+        // - Collider is set to trigger mode
+        // - AmmoBox is ready to detect player and be picked up
+        // - Designer doesn't have to manually configure these settings
     }
 }
 
