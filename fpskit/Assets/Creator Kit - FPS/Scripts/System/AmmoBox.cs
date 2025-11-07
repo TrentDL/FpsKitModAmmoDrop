@@ -4,6 +4,7 @@
 
 using System.Collections;          // Provides interfaces for collections (not used here but commonly included)
 using System.Collections.Generic;  // Provides generic collection types (not used here but commonly included)
+
 using UnityEngine;                 // Core Unity engine functionality - required for MonoBehaviour, GameObject, etc.
 
 // ============================================================================
@@ -114,10 +115,12 @@ public class AmmoBox : MonoBehaviour
     /// - Integers are safer (no typos like "Riffle Ammo" vs "Rifle Ammo")
     /// - Integers allow for efficient dictionary lookups in Controller
     /// </summary>
-  [Header("Pickup Settings")]
-  
+   [Header("Pickup Settings")]
+
     [AmmoType]
     public int ammoType;
+    
+  
 
     /// <summary>
     /// Amount of ammunition to grant when picked up
@@ -147,12 +150,21 @@ public class AmmoBox : MonoBehaviour
     /// </summary>
     public int amount;
 
+   // Public AudioSource reference - Unity component for playing audio clips
+    // This plays ambient/idle sounds while the target exists
+        public AudioSource PickupSound;
+
+
+
+
     [Header("Physics Settings")]
      public float dropForce = 2f; // Small upward force when spawned
 
      private Rigidbody rb;
     private bool hasLanded = false;
-     private GameObject triggerChild;
+    private GameObject triggerChild;
+     
+     
 
     // ========================================================================
     // RESET METHOD - Unity Editor helper method
@@ -218,8 +230,10 @@ public class AmmoBox : MonoBehaviour
 
 
 
+    
 
 
+    
 
     // ========================================================================
     // ONTRIGGERENTER - Unity physics callback method
@@ -385,6 +399,16 @@ public class AmmoBox : MonoBehaviour
             // - Plays sound effects (if implemented)
             // Direct dictionary access would skip all this logic and cause bugs!
             c.ChangeAmmo(ammoType, amount);
+
+
+            // Play pickup sound using WorldAudioPool (survives after destruction)
+        if (PickupSound != null && PickupSound.clip != null)
+        {
+            var source = WorldAudioPool.GetWorldSFXSource();
+            source.transform.position = transform.position;
+            source.pitch = PickupSound.pitch;
+            source.PlayOneShot(PickupSound.clip);
+        }
 
             // ================================================================
             // DESTROY PICKUP - Remove from game world
